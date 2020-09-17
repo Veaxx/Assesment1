@@ -10,7 +10,30 @@
 </head>
 
 <body>
-
+  
+    <nav>
+        <div id="logo"><img src="../Assesment1/images/logo.ico"> </div>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop">
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li> 
+            <!-- First Tier Drop Down -->
+            <label for="drop-1" class="toggle">Champions +</label>
+            <a href="#">Champions</a>
+            <input type="checkbox" id="drop-1">
+            <ul>
+              <li><a href="#">Mage</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Tank</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    
+    
     <div class="grid-container">
         <div class="grid-item">test1</div>
         <div class="grid-item">test2</div>

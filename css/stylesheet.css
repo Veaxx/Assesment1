@@ -1,298 +1,109 @@
 @font-face{
-    font-family: Quadrata;
-    src: url(../css/font/Quadrata/Friz\ Quadrata\ Regular.ttf);
-    src: url(../css/font/Quadrata/Friz\ Quadrata\ Bold.otf);
+  font-family: Quadrata;
+  src: url(../assets/font/Quadrata/Friz\ Quadrata\ Regular.ttf);
+  src: url(../assets/font/Quadrata/Friz\ Quadrata\ Bold.otf);
 }
 
-body {
-    font-size: 22px;
-    line-height: 32px;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    word-wrap: break-word !important;
-    font-family: 'Quadrata';
-  
-
-
-  }
-  
-  h1 {
-    font-size: 60px;
-    text-align: center;
-    color: #FFF;
-  }
-  
-  h3 {
-    font-size: 30px;
-    line-height: 34px;
-    text-align: center;
-    color: #FFF;
-  }
-  
-  h3 a { color: #FFF; }
-  
-  a { color: #FFF; }
-  
-  h1 {
-    margin-top: 100px;
-    text-align: center;
-    font-size: 60px;
-    line-height: 70px;
-    font-family: 'roboto', sans-serif;
-  }
-  
-  #container {
-    margin: 0 auto;
-    max-width: 890px;
-  }
-  
-  p { text-align: center; }
-   .toggle, [id^=drop] {
-   display: none;
-  }
-  
-  /* MENU */
-  nav {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    opacity: 0.9;
-  }
-  
-  #logo {
-    display: block;
-    padding: 20px 30px 0px 30px;
-    float: left;
-    font-size: 20px;
-    line-height: 60px;
-  }
-  #logo img {
-    width: 50px;
-    height: 50px;
-
+*{ 
+  box-sizing:border-box;
+  font-family:"Dosis", sans-serif; 
+  padding: 0;
+  margin: 0;
+}
+body
+{
+  background-color: #000;
+}
+ul{
+  margin:0;
+  padding:0;
+}
+.riotgames-icon
+{
+  width: 50px;
+  height: 50px;
+}
+.menu {
+  display:flex;  
+  flex-direction:column;
 }
   
-  nav:after {
-    content: "";
-    display: table;
-    clear: both;
+  li {
+    display:block;
+    list-style-type:none;
+    text-transform:uppercase;
   }
   
-  nav ul {
-    float: right;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-  }
-  
-  nav ul li {
-    margin: 0px;
-  
-    float: left;
-    background-color: #000;
-  }
-  
-  nav a {
-    
-    padding: 0 20px;
+  li a{
+    display:flex;
+    text-align:center;
+    text-decoration:none;
     color: #FFF;
-    font-size: 20px;
-    line-height: 60px;
-    text-decoration: none;
+    padding:1rem;
   }
   
-  nav ul li ul li:hover
-   { 
-      background: #000000; 
-     
+  li a:hover{
+    color:#FFF;
+  }
+ 
+
+@media (min-width: 800px) {
+    .menu{
+      flex-direction:row;
+      justify-content:space-between;
     }
-  
-  nav a:hover 
-  { 
-      background-color: #000; 
-      border-bottom: 2px solid #fff;
-    }
-  
+}
+
+.menu-item-has-children > a:after{
+  font-family:'Genericons';
+  padding:1px;
+}
+
+nav ul ul {
+    display: none;
+}
+
+@media (min-width: 800px) {
   nav ul ul {
     display: none;
-    position: absolute;
-    top: 60px;
-   
+    position:absolute;
+  }
+}
+
+nav ul li:hover > ul {
+  display:block;
+  color:#FFF;
+  padding-left:2rem;
+}
+
+@media (min-width: 800px) {
+  nav ul li:hover > ul {
+    padding-left:0;
+    }
+  
+  nav ul li:hover > ul a{
+    color:#FFF;
   }
   
-  nav ul li:hover > ul { display: inherit; }
-  
-  nav ul ul li {
-    width: 170px;
-    float: none;
-    display: list-item;
-    position: relative;
-  z-index:-2;
-  
-
+  .sub-menu li{
+      display:flex;
+    }
+    
+    li:hover, li a:hover{
+      text-decoration:underline;
+    }
   }
   
-  nav ul ul ul li {
-    position: relative;
-    top: -60px;
-    left: 170px;
+  nav ul ul ul{
+    margin:0 0 0 100%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
   }
   
-  li > a:after { content: ' +'; }
-  
-  li > a:only-child:after { content: ''; }
-  
-  
-  /* Media Queries
-  --------------------------------------------- */
-  
-  @media all and (max-width : 768px) {
-  
-    nav ul ul li {
-      
-      z-index:0;
-    }
-
-  #logo {
-    display: block;
-    padding: 0;
-    width: 100%;
-    text-align: center;
-    float: none;
+  .menu-item-has-children .menu-item-has-children > a:after{
+    font-family:'Quadrata';
+    padding:1px;
+    transform: rotate(-90deg);
   }
-  
-  nav { margin: 0; }
-  
-  .toggle + a,
-   .menu { display: none; }
-  
-  .toggle {
-    display: block;
-    background-color: #000;
-    padding: 0 20px;
-    color: #FFF;
-    font-size: 20px;
-    line-height: 60px;
-    text-decoration: none;
-    border: none;
-  }
-  
-  .toggle:hover { background-color: #000000; }
-  
-  [id^=drop]:checked + ul { display: block; }
-  
-  nav ul li {
-    display: block;
-    width: 100%;
-  }
-  
-  nav ul ul .toggle,
-   nav ul ul a { padding: 0 40px; }
-  
-  nav ul ul ul a { padding: 0 80px; }
-  
-  nav a:hover,
-   nav ul ul ul a { background-color: #000000; }
-  
-  nav ul li ul li .toggle,
-   nav ul ul a { background-color: #212121; }
-  
-  nav ul ul {
-    float: none;
-    position: static;
-    color: #ffffff;
-  }
-  
-  nav ul ul li:hover > ul,
-  nav ul li:hover > ul { display: none; }
-  
-  nav ul ul li {
-    display: block;
-    width: 100%;
-  }
-  
-  nav ul ul ul li { position: static;
-  
-  }
-  }
-  
-  @media all and (max-width : 330px) {
-  
-  nav ul li {
-    display: block;
-    width: 94%;
-  }
-/* END GRID */
-
-/* START CHAMPION CARD CSS */
-    .champ-card{
-        width: 100%;
-        height: 100%;
-    }
-
-    /* entire container, keeps perspective */
-    .flip-container {
-        perspective: 1000px;
-    }
-        /* flip the pane when hovered */
-        .flip-container:hover .flipper, .flip-container.hover .flipper {
-            transform: rotateY(180deg);
-        }
-
-    .flip-container, .front, .back {
-        width: 280px;
-        height: 320px;
-    }
-
-    /* flip speed goes here */
-    .flipper {
-        transition: 0.9s;
-        transform-style: preserve-3d;
-        position: relative;
-    }
-
-    /* hide back of pane during swap */
-    .front, .back {
-        backface-visibility: hidden;
-
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    /* front pane, placed above back */
-    .front {
-        background-color:red;
-        z-index: 2;
-        /* for firefox 31 */
-        transform: rotateY(0deg);
-    }
-
-    /* back, initially hidden pane */
-    .back {
-        background-color: green;
-        transform: rotateY(180deg);
-    }
-/* END CHAMPION CARD CSS */
 
 
-/* START MEDIA QUERIES */
-
-    /* On screens that are 992px wide or less, the screen is for tablet */
-    @media screen and (max-width: 992px) {
-    body {
-        background-color: silver;
-
-    }
-    }
-
-    /* On screens that are 600px wide or less, the screen is for phone */
-    @media screen and (max-width: 600px) {
-    body {
-        background-color: gold;
-
-    }
-    }
-/* END MEDIA QUERIES */
+  

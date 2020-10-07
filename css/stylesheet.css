@@ -1,109 +1,285 @@
-@font-face{
+@font-face {
   font-family: Quadrata;
   src: url(../assets/font/Quadrata/Friz\ Quadrata\ Regular.ttf);
   src: url(../assets/font/Quadrata/Friz\ Quadrata\ Bold.otf);
 }
 
-*{ 
-  box-sizing:border-box;
-  font-family:"Dosis", sans-serif; 
+* {
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
   padding: 0;
   margin: 0;
 }
-body
-{
-  background-color: #000;
+body {
+  background-color: grey;
 }
-ul{
-  margin:0;
-  padding:0;
+ul {
+  margin: 0;
+  padding: 0;
 }
-.riotgames-icon
-{
+.riotgames-icon {
   width: 50px;
   height: 50px;
 }
 .menu {
-  display:flex;  
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
-  
-  li {
-    display:block;
-    list-style-type:none;
-    text-transform:uppercase;
-  }
-  
-  li a{
-    display:flex;
-    text-align:center;
-    text-decoration:none;
-    color: #FFF;
-    padding:1rem;
-  }
-  
-  li a:hover{
-    color:#FFF;
-  }
- 
+
+li {
+  display: block;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+li a {
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+}
+
+li a:hover {
+  color: #fff;
+}
 
 @media (min-width: 800px) {
-    .menu{
-      flex-direction:row;
-      justify-content:space-between;
-    }
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
-.menu-item-has-children > a:after{
-  font-family:'Genericons';
-  padding:1px;
+.menu-item-has-children > a:after {
+  font-family: "Genericons";
+  padding: 1px;
 }
 
 nav ul ul {
-    display: none;
+  display: none;
 }
 
 @media (min-width: 800px) {
   nav ul ul {
     display: none;
-    position:absolute;
+    position: absolute;
   }
 }
 
 nav ul li:hover > ul {
-  display:block;
-  color:#FFF;
-  padding-left:2rem;
+  display: block;
+  color: #fff;
+  padding-left: 2rem;
 }
 
 @media (min-width: 800px) {
   nav ul li:hover > ul {
-    padding-left:0;
-    }
-  
-  nav ul li:hover > ul a{
-    color:#FFF;
-  }
-  
-  .sub-menu li{
-      display:flex;
-    }
-    
-    li:hover, li a:hover{
-      text-decoration:underline;
-    }
-  }
-  
-  nav ul ul ul{
-    margin:0 0 0 100%;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
-  }
-  
-  .menu-item-has-children .menu-item-has-children > a:after{
-    font-family:'Quadrata';
-    padding:1px;
-    transform: rotate(-90deg);
+    padding-left: 0;
   }
 
+  nav ul li:hover > ul a {
+    color: #fff;
+  }
 
-  
+  .sub-menu li {
+    display: flex;
+  }
+
+  li:hover,
+  li a:hover {
+    text-decoration: underline;
+  }
+}
+
+nav ul ul ul {
+  margin: 0 0 0 100%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+.menu-item-has-children .menu-item-has-children > a:after {
+  font-family: "Quadrata";
+  padding: 1px;
+  transform: rotate(-90deg);
+}
+
+/* Contact form*/
+
+#contact 
+{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(190, 104, 104);
+  overflow: hidden;
+  padding-bottom: 200px;
+}
+
+.section-header 
+{
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  font: 300 60px "Oswald", sans-serif;
+  letter-spacing: 6px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.contact-wrapper 
+{
+  margin: 0 auto;
+  padding-top: 20px;
+  position: relative;
+  max-width: 800px;
+}
+
+/* Begin Left Contact Page */
+.form-horizontal 
+{
+  float: left;
+  max-width: 400px;
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+.form-control,
+textarea 
+{
+  max-width: 400px;
+  color: rgb(102, 27, 27);
+  width: 400px;
+}
+
+.send-button 
+{
+  margin-top: 15px;
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.button 
+{
+  width: 400px;
+  height: 34px;
+  transition: all 0.2s ease-in-out;
+}
+
+.send-text 
+{
+  display: block;
+  margin-top: 10px;
+  font: 300 14px "Lato", sans-serif;
+  letter-spacing: 2px;
+}
+
+.button:hover 
+{
+  transform: translate3d(0px, -29px, 0px);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container 
+{
+  max-width: 400px;
+  float: right;
+  margin-top: 5px;
+}
+
+.copyright 
+{
+  font: 200 14px "Oswald", sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.form-group 
+{
+  height: 70px;
+}
+
+input#email 
+{
+  height: 45px;
+}
+
+input#name 
+{
+  height: 45px;
+}
+
+iframe .googlemaps{
+  height: 430px;
+  margin-top: 10px;
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 760px) 
+{
+  #contact 
+  {
+    height: 1000px;
+  }
+  .section-header 
+  {
+    font-size: 65px;
+  }
+  .direct-contact-container,
+
+  .form-horizontal 
+  {
+    float: none;
+    margin: 10px auto;
+  }
+
+  .direct-contact-container 
+  {
+    margin-top: 60px;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 569px) 
+{
+  #contact 
+  {
+    height: 1200px;
+  }
+
+  .section-header 
+  {
+    font-size: 50px;
+  }
+
+  .direct-contact-container,
+  .form-wrapper 
+  {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .form-control,
+  textarea 
+  {
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .direct-contact-container 
+  {
+    margin-top: 60px;
+    max-width: 280px;
+  }
+}
+
+@media screen and (max-width: 410px) 
+{
+  .send-button 
+  {
+    width: 99%;
+  }
+}

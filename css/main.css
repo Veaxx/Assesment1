@@ -1,8 +1,38 @@
-.white
+/* Home */
+.leagueoflegendsimg
 {
-    color: #FFF;
+    width: 50%;
 }
-.logoico
+.homecontainer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.playforfreetxt
+{
+  text-transform: uppercase;
+  border: 3px solid #937341;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  background-color: #000;
+  margin-top: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+.playforfreetxt:hover
+{
+  transition: 0.5s;
+  background-color: #fff;
+  color: #000;
+}
+
+/* About */
+.summonersrift
 {
     width: 100%;
 }
@@ -12,21 +42,7 @@
     height: 50%;
 }
 
-.leagueoflegendsimg
-{
-    width: 50%;
-}
-
-.homecontainer
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 /* Contact form*/
- 
 #contact 
 {
   width: 100%;

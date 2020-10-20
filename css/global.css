@@ -11,7 +11,10 @@
   padding: 0;
   margin: 0;
 }
-
+.white
+{
+    color: #FFF;
+}
 html, body
 {
     height: 100%;

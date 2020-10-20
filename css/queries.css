@@ -123,5 +123,9 @@
     {
         width: 100%;
     } 
+    .aboutheader
+    {
+        text-align: center;
+    }
 }
     /* End media queries main css */

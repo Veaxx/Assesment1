@@ -15,6 +15,10 @@
 {
     color: #FFF;
 }
+.center
+{
+  text-align: center;
+}
 html, body
 {
     height: 100%;

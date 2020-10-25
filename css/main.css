@@ -169,10 +169,11 @@ p.champion-quote-ivern {
 /* Begin Left Contact Page */
 .form-horizontal 
 {
-  float: left;
-  max-width: 400px;
+  max-width: 100%;
   font-family: "Lato";
   font-weight: 400;
+  display: inline-block;
+  padding-right: 50px;
 }
  
 .form-control,
@@ -196,6 +197,7 @@ textarea
   border: 1px solid #fff;
   color: #fff;
   cursor: pointer;
+  display: block;
 }
 .send-button:hover
 {
@@ -215,8 +217,8 @@ textarea
 .direct-contact-container 
 {
   max-width: 400px;
-  float: right;
   margin-top: 5px;
+  display: inline-block;
 }
  
 .copyright 
@@ -330,3 +332,4 @@ p.txt-champions {
   text-decoration: none;
   color: #fff;
 }
+

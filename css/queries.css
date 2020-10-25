@@ -109,6 +109,20 @@
 }
 @media (max-width: 800px)
 {
+    .menu-item-normal
+    {
+        display:none !important;
+    }
+    .menu-item-responsive
+    {
+        display: flex !important;
+        color: white;
+        padding: 1rem;
+    }
+    .menu-subitem-responsive
+    {
+        display: block !important;
+    }
     .contact
     {
         margin-bottom: 100px;

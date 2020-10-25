@@ -54,7 +54,6 @@
 {
   animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
   transition: 0.2s;
-  transform: scale(1.1);
   background-color: #fff;
   color: #000;
 }
@@ -201,7 +200,6 @@ textarea
 .send-button:hover
 {
   transition: 0.5s;
-  transform: rotateY(20deg);
   animation: bounce 1.5s infinite;
   background-color: #fff;
   color: #000;
@@ -319,7 +317,7 @@ p.txt-champions {
 
 .gallery {
   max-width: 800px;
-  margin: auto;
+  margin: auto auto 50px auto;
   width: 52.7%;
   display: flex;
   align-items: flex-start;

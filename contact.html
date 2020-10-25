@@ -34,7 +34,7 @@
   </nav>
 
 
-  <section id="contact">
+  <section class="contact">
 
     <h1 class="section-header">CONTACT</h1>
 
@@ -46,23 +46,23 @@
     
       ----------------->
 
-      <form class="form-horizontal" role="form" method="post" action="contact.php">
+      <form class="form-horizontal" role="form" method="post" action="#">
 
         <div class="form-group">
-          <div class="col-sm-12">
-            <input type="text" class="form-control" id="name" placeholder="FIRSTNAME" name="name" value="">
+          <div>
+            <input type="text" class="form-control txtbox" placeholder="FIRSTNAME" name="name" value="">
           </div>
         </div>
 
         <div class="form-group">
-          <div class="col-sm-12">
-            <input type="text" class="form-control" id="name" placeholder="LASTNAME" name="name" value="">
+          <div>
+            <input type="text" class="form-control txtbox" placeholder="LASTNAME" name="name" value="">
           </div>
         </div>
 
         <div class="form-group">
-          <div class="col-sm-12">
-            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
+          <div>
+            <input type="email" class="form-control txtbox" id="email" placeholder="EMAIL" name="email" value="">
           </div>
         </div>
 
@@ -75,11 +75,10 @@
         <input type="radio" name="gender" id="female" value="female">
       
 
-        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-          <div class="button">
+        <button class="send-button" id="submit" type="submit" value="SEND">
+          <div>
             <span class="send-text">SEND</span>
           </div>
-
         </button>
 
       </form>

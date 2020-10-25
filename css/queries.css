@@ -44,19 +44,9 @@
     .direct-contact-container,
     .form-horizontal 
     {
-        float: none;
         margin: 10px auto;
     }
 
-    .direct-contact-container 
-    {
-        margin-top: 60px;
-        max-width: 300px;
-    }
-}
- 
-@media screen and (max-width: 569px) 
-{
     #contact 
     {
         height: 1200px;
@@ -67,17 +57,25 @@
         font-size: 50px;
     }
 
+    .send-button {
+        width: 100%;
+    }
+
+    .form-horizontal {
+        width: 100%;
+    }
+    
+
     .direct-contact-container,
     .form-wrapper 
-    {
-        float: none;
+    { 
         margin: 0 auto;
     }
 
     .form-control,
     textarea 
     {
-        max-width: 400px;
+        max-width: 100%;
         margin: 0 auto;
         width: 100%;
     }
@@ -85,8 +83,17 @@
     .direct-contact-container 
     {
         margin-top: 60px;
-        max-width: 280px;
+    
+        max-width: 100%;
     }
+    .googlemaps {
+        width: 100vw;
+    }
+}
+ 
+@media screen and (max-width: 569px) 
+{
+   
 }
  
 @media (min-width: 800px) {

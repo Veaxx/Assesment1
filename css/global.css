@@ -21,6 +21,8 @@
 }
 html, body
 {
+    margin: 0;
+    padding: 0;
     height: 100%;
     background-color: #000;
 }
@@ -66,7 +68,7 @@ li a:hover
 
 .footer
 {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   color: #FFF;
   width: 100%;

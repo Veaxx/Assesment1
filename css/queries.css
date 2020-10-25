@@ -109,26 +109,17 @@
 }
 @media (max-width: 800px)
 {
-    .flip-box
+    .contact
     {
-        width: 100%;
+        margin-bottom: 100px;
     }
-    .champ-image
-    {
-        width: 100%;
-    }
-    /* Home */
-    .leagueoflegendsimg
+    .leagueoflegendsimg, .champ-image, .flip-box, .abouttxt 
     {
         width: 100%;
     }
     .imgbox
     {
         display:none;
-    }
-    .abouttxt
-    {
-        width: 100%;
     } 
     .aboutheader
     {

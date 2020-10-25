@@ -1,3 +1,29 @@
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+@keyframes bounce {
+  0%,  
+  100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
 /* Home */
 .leagueoflegendsimg
 {
@@ -26,7 +52,9 @@
 }
 .playforfreetxt:hover
 {
-  transition: 0.5s;
+  animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+  transition: 0.2s;
+  transform: scale(1.1);
   background-color: #fff;
   color: #000;
 }
@@ -112,13 +140,11 @@ p.champion-quote-ivern {
 }
 
 /* Contact form*/
-#contact 
+.contact 
 {
   width: 100%;
-  height: 100vh;
   background-color:#000;
   overflow: hidden;
-  padding-bottom: 200px;
 }
  
 .section-header 
@@ -154,8 +180,10 @@ p.champion-quote-ivern {
 textarea 
 {
   max-width: 400px;
-  color: rgb(102, 27, 27);
+  color: #fff;
   width: 400px;
+  background-color: #000;
+  border: 1px solid #fff;
 }
  
 .send-button 
@@ -165,26 +193,24 @@ textarea
   width: 400px;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
 }
- 
-.button 
+.send-button:hover
 {
-  width: 400px;
-  height: 34px;
-  transition: all 0.2s ease-in-out;
+  transition: 0.5s;
+  transform: rotateY(20deg);
+  animation: bounce 1.5s infinite;
+  background-color: #fff;
+  color: #000;
 }
- 
 .send-text 
 {
   display: block;
-  margin-top: 10px;
   font: 300 14px "Lato", sans-serif;
   letter-spacing: 2px;
-}
- 
-.button:hover 
-{
-  transform: translate3d(0px, -29px, 0px);
 }
  
 /* Begin Right Contact Page */
@@ -207,15 +233,11 @@ textarea
 {
   height: 70px;
 }
- 
-input#email 
+.txtbox
 {
   height: 45px;
-}
- 
-input#name 
-{
-  height: 45px;
+  background-color: #000;
+  border: 1px solid #fff;
 }
  
 iframe .googlemaps{

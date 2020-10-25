@@ -11,6 +11,12 @@
   padding: 0;
   margin: 0;
 }
+
+html, body
+{
+    height: 100%;
+    background-color: #000;
+}
 .white
 {
     color: #FFF;
@@ -19,14 +25,12 @@
 {
   text-align: center;
 }
-html, body
-{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: #000;
-}
 
+h1{
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
 ul
 {
   margin:0;
@@ -38,18 +42,6 @@ ul
   width: 50px;
   height: 50px;
 }
-/* TEST */
-.menu-item-responsive, .menu-subitem-responsive
-{
-  display:none !important;
-}
-
-.menu 
-{
-  display:flex;  
-  flex-direction:column;
-}
-  
 li 
 {
   display:block;
@@ -112,12 +104,14 @@ nav ul ul ul
   transform: rotate(-90deg);
 }
 
-h1{
-  font-size: 40px;
-  color: white;
-  text-align: center;
+.menu-item-responsive, .menu-subitem-responsive
+{
+  display:none !important;
 }
 
-h4{
-  text-align: center;
+.menu 
+{
+  display:flex;  
+  flex-direction:column;
 }
+  

@@ -57,11 +57,7 @@
         font-size: 50px;
     }
 
-    .send-button {
-        width: 100%;
-    }
-
-    .form-horizontal {
+    .send-button, .form-horizontal {
         width: 100%;
     }
     
@@ -83,19 +79,13 @@
     .direct-contact-container 
     {
         margin-top: 60px;
-    
         max-width: 100%;
     }
     .googlemaps {
         width: 100vw;
     }
 }
- 
-@media screen and (max-width: 569px) 
-{
-   
-}
- 
+
 @media (min-width: 800px) {
     .abouttxt
     {

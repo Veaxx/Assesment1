@@ -116,7 +116,7 @@ p.champion-quote-ivern {
 {
   width: 100%;
   height: 100vh;
-  background-color:grey;
+  background-color:#000;
   overflow: hidden;
   padding-bottom: 200px;
 }
@@ -127,7 +127,7 @@ p.champion-quote-ivern {
   margin: 0 auto;
   padding-top: 50px;
   margin-bottom: 50px;
-  font: 300 60px "Oswald", sans-serif;
+  font: 300 45px "Oswald", sans-serif;
   letter-spacing: 6px;
   color: #fff;
   margin-bottom: 25px;
